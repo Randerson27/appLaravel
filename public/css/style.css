@@ -1,0 +1,342 @@
+*{
+padding: 0;
+margin: 0;
+color: white;
+/* font-family: "Lexend", sans-serif; */
+font-family: "Roboto", sans-serif;
+}
+:root{
+    --amarelo:#ECB163;
+    --amareloEscuro:#af8145;
+    --lightBlack: #202020;
+}
+p{
+    font-size: 12px;
+}
+body{
+    background: linear-gradient(98deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 100%);
+}
+/* .button-bate-papo{
+
+} */
+.button-wrapper .button-bate-papo .button{
+    padding: 5px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 3px 3px 6px;
+    cursor: pointer;
+}
+.button-wrapper .button-bate-papo .button:hover{
+   background-color: var(--amareloEscuro);
+   /* color: white; */
+   box-shadow: black;
+}
+/*NAVBAR*/
+.navbar{
+    background: linear-gradient(150deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+    background-color: unset;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.navbar .nav-wrapper .brand-logo{
+    color: var(--amarelo);
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: 700;
+}
+.navbar .nav-wrapper .brand-logo:hover{
+    font-size: 40px;
+    transition: 0.5s;
+    color: var(--amareloEscuro);
+}
+.navbar .nav-wrapper li a:hover{
+    background-color: var(--lightBlack);
+    /* transition: 0.9s; */
+}
+/* .navbar .nav-wrapper .linksRight li a:hover{
+    background-color: var(--lightBlack);
+    transition: 0.9s;
+} */
+
+#mobile-demo{
+    background: linear-gradient(150deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+}
+#mobile-demo li a{
+    color: white;
+}
+nav .sidenav-trigger i{
+    color: var(--lightBlack);
+}
+/* #mobile-demo li a:hover{
+    color: white;
+    background-color: black;
+} */
+/*END NAVBAR*/
+
+/*HERO */
+
+.hero{
+    background-image: url('../img/heroBackground.png');
+    background-position: bottom; 
+    height: 100vh;
+    /* height: 530px; */
+}
+.hero .hero-wrapper{
+    height: 490px;
+    background-image: url('../img/bannerHome.png');
+    background-position: center;  
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    
+}
+.hero .hero-wrapper span{
+    color: var(--amarelo); 
+}
+.hero .hero-wrapper .row{
+    /* margin-bottom: 0px; */
+}
+.hero .hero-wrapper .row .boxHero .boxHeroText{
+    padding: 80px 0;
+}
+.hero .hero-wrapper .row .boxHero .boxHeroText p{
+    font-size: 20px;
+}
+.hero .hero-wrapper .row .boxHero h2{
+    font-family: "Big Shoulders Inline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:900;  
+}
+.hero .hero-wrapper .row .boxHero .button-contato{
+    margin-top: 50px;
+}
+.hero .hero-wrapper .row .boxHero .button-contato a{
+    background-color: var(--amarelo);
+}
+.hero .hero-wrapper .row .boxHero .seta{
+    position: relative;
+    top: 55px;
+}
+.hero .hero-wrapper .row .boxHero .seta img{
+    width: 30px;
+}
+.hero .hero-wrapper .iconsSide{
+    position: absolute;
+    top: 520px;
+    right: 100px;
+    width: 90px;
+    height: 35px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+.hero .hero-wrapper .iconsSide i{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.hero .hero-wrapper .iconsSide i:hover{
+    font-size: 25px;
+    color: var(--amarelo);
+    transition: 0.5s;
+}
+
+/*END HERO*/
+
+/*PROJETOS*/
+.projetos{
+    height: auto;
+}
+.projetos .projetos-wrapper h2{
+    font-size: 24px; 
+    color: var(--amarelo);
+}
+.projetos .projetos-wrapper .boxProjetos {
+    background-color: var(--lightBlack);
+    margin-top: 30px;
+}
+.projetos .projetos-wrapper .boxProjetos .boxCenter{
+    column-count: 2;
+    column-gap: 10px;
+}
+.projetos .projetos-wrapper .boxProjetos .boxCenter .boxShowProjeto img{
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+.projetos .projetos-wrapper .boxProjetos .boxCenter .boxShowProjeto img:hover{
+    opacity: unset;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*END PROJETOS*/
+
+/*SERVICOS*/
+.servicos{
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.servicos .servicos-wrapper h2{
+    font-size: 24px; 
+    color: var(--amarelo);
+}
+.servicos .servicos-wrapper .boxServicos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.servicos .servicos-wrapper .boxServicos .boxDev,
+.servicos .servicos-wrapper .boxServicos .boxDesigner,
+.servicos .servicos-wrapper .boxServicos .boxMarketing{
+  /* border-left: 2px solid var(--amarelo); */
+  width: 260px;
+  
+  /* padding: 20px; */
+}
+.servicos .servicos-wrapper .boxServicos .boxDev .boxImg,
+.servicos .servicos-wrapper .boxServicos .boxDesigner .boxImg,
+.servicos .servicos-wrapper .boxServicos .boxMarketing .boxImg{
+    text-align: center;
+}
+.servicos .servicos-wrapper .boxServicos .boxDev .boxText,
+.servicos .servicos-wrapper .boxServicos .boxDesigner .boxText,
+.servicos .servicos-wrapper .boxServicos .boxMarketing .boxText{
+    padding: 0px 10px 20px 10px;
+    border-left: 2px solid var(--amarelo);
+    min-height: 190px;
+}
+.servicos .servicos-wrapper .boxServicos .boxDev a,
+.servicos .servicos-wrapper .boxServicos .boxDesigner  a,
+.servicos .servicos-wrapper .boxServicos .boxMarketing  a{
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+}
+
+.servicos .servicos-wrapper .boxServicos .boxDev img,
+.servicos .servicos-wrapper .boxServicos .boxDesigner img,
+.servicos .servicos-wrapper .boxServicos .boxMarketing img{
+    width: 40px;
+    text-align: center;
+    align-items: center;
+}
+.servicos .servicos-wrapper .boxServicos .boxDev h2,
+.servicos .servicos-wrapper .boxServicos .boxDesigner h2,
+.servicos .servicos-wrapper .boxServicos .boxMarketing h2{
+  color: var(--amarelo);
+  font-size: 20px;
+}
+/*END SERVICOS*/
+
+/*INFORMAÇÕES*/
+.informacoes{
+height: 600px;
+display: flex;
+align-items: center;
+
+background-image: url('../img/heroBackground.png');
+background-position: bottom;
+/* border: 2px solid red; */
+}
+.informacoes .informacoes-wrapper h2{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--amarelo);
+}
+.informacoes .informacoes-wrapper hr{
+    position: relative;
+    bottom: 130px;
+    opacity: 0.3;
+}
+.informacoes .informacoes-wrapper .boxInformacoes{
+    display: flex;
+    justify-content: space-between;
+}
+.informacoes .informacoes-wrapper .boxInformacoes .boxCoffe,
+.informacoes .informacoes-wrapper .boxInformacoes .boxProjetos,
+.informacoes .informacoes-wrapper .boxInformacoes .boxExperiencia{
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: url('../img/imgInformacoes.png');
+    background-position: center;
+    /* background: linear-gradient(135deg, rgba(68,68,68,1) 44%, rgba(0,0,0,1) 56%); */
+}
+.informacoes .informacoes-wrapper .boxInformacoes .boxCoffe h2,
+.informacoes .informacoes-wrapper .boxInformacoes .boxProjetos h2,
+.informacoes .informacoes-wrapper .boxInformacoes .boxExperiencia h2{
+    font-size: 28px;
+    font-weight: 800;
+    padding-bottom: 0;
+    margin: 0;
+}
+.informacoes .informacoes-wrapper .boxInformacoes .boxCoffe p,
+.informacoes .informacoes-wrapper .boxInformacoes .boxProjetos p,
+.informacoes .informacoes-wrapper .boxInformacoes .boxExperiencia p{
+    font-size: 24px;
+    font-weight: 600;
+}
+/*END INFORMAÇÕES*/
+
+/*CONTRATE*/
+.contrate{
+    background-image: url(../img/ContrateBackground.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 364px;
+    display: flex;
+    align-items: center;
+}
+.contrate .row{
+    margin-bottom: 0;
+}
+.contrate .row .boxContrate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.contrate .row .boxContrate .box-img,
+.contrate .row .boxContrate .box-text{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.contrate .row .boxContrate .box-text .button-wrapper{
+    margin-top: 20px;
+}
+.contrate .row .boxContrate .box-img img{
+    width: 100%;
+    min-height: 240px;
+}
+.contrate .row .boxContrate .box-text h2{
+    font-size: 32px;
+    color: var(--amarelo);
+}
+/*END CONTRATE*/
+
+/*FOOTER*/
+.page-footer{
+    background: linear-gradient(150deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+    
+}
+.page-footer .boxRedesSociais{
+    padding: 0;
+
+}
+.page-footer .boxContato .boxRedesSociais ul li a i{
+    padding: 0 5px 0 0;
+
+}
