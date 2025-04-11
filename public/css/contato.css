@@ -1,0 +1,95 @@
+.contatos .boxMainText{
+    text-align: center;
+}
+.contatos .boxMainText h2{
+    font-size: 30px;
+}
+.contatos .boxWrapper{
+    height: 400px;
+    display: flex;
+    margin-top: 30px;
+}
+.contatos .boxWrapper .boxContatoLeft h6,
+.contatos .boxWrapper .boxContatoRight  h6{
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+.contatos .boxWrapper .boxContatoLeft .box-telefone,
+.contatos .boxWrapper .boxContatoLeft .box-email{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+.contatos .boxWrapper .boxContatoLeft .box-telefone .telefone,
+.contatos .boxWrapper .boxContatoLeft .box-email .email{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+.contatos .boxWrapper .boxContatoLeft .box-telefone .telefone:hover,
+.contatos .boxWrapper .boxContatoLeft .box-email .email:hover{
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+.contatos .boxWrapper .boxContatoLeft .box-telefone .telefone i{
+    font-size: 20px;
+}
+.contatos .boxWrapper .boxContatoLeft .box-telefone .telefoneText h6,
+.contatos .boxWrapper .boxContatoLeft .box-email .emailText h6{
+   margin: 0;
+   padding-bottom: 20px; 
+}
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais{
+   
+    padding-top: 20px;
+}
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper{
+    display: flex;
+}
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-github .github,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-whatsapp .whatsapp,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-linkedin .linkedin,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-tiktok .tiktok,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-instagram .instagram
+{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-github .github:hover,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-whatsapp .whatsapp:hover,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-linkedin .linkedin:hover,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-tiktok .tiktok:hover,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .redesSociais-wrapper .box-instagram .instagram:hover
+{
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .box-github .github i,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .box-whatsapp .whatsapp i,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .box-linkedin .linkedin i,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .box-tiktok .tiktok i,
+.contatos .boxWrapper .boxContatoLeft .boxRedesSociais .box-instagram .instagram i
+{
+    font-size: 20px;
+}
+.contatos .boxWrapper .boxContatoLeft,
+.contatos .boxWrapper .boxContatoRight{
+    width: 100%;
+    gap: 20px;
+}
+.contatos .boxWrapper .boxContatoRight .boxInputs .textarea{
+    height: 70px;
+}

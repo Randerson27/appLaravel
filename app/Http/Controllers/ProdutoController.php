@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Produto;
 use Illuminate\Http\Request;
-use App\Models\Projeto;
 
-class ProjetoController extends Controller
+class ProdutoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // return "index";
-       $projetos = Projeto::all();
+          // return "index";
+       $produtos = Produto::paginate(3);
 
-        return view('site/home', compact('projetos'));
-        
+        return view('site/produto', compact('produtos'));
+        // return view('site.produto');
     }
 
     /**
@@ -38,7 +38,7 @@ class ProjetoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Produto $produto)
     {
         //
     }
@@ -46,7 +46,7 @@ class ProjetoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Produto $produto)
     {
         //
     }
@@ -54,7 +54,7 @@ class ProjetoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Produto $produto)
     {
         //
     }
@@ -62,7 +62,7 @@ class ProjetoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Produto $produto)
     {
         //
     }

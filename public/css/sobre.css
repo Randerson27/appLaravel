@@ -1,0 +1,108 @@
+/*SOBRE*/
+.sobre{
+    background-image: url('../img/SobreBackgraund.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.sobre .sobreWrapper .boxText{
+    padding: 30px;
+}
+.sobre .sobreWrapper .boxText p{
+    text-align: justify;
+}
+/*END SOBRE*/
+
+/*HABILIDADES*/
+.habilidades{
+    height: 530px;
+    display: flex;
+    align-items: center;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .areaHtml,
+.habilidades .habilidadesWrapper .boxHabilidades .areaCss,
+.habilidades .habilidadesWrapper .boxHabilidades .areaJavascript,
+.habilidades .habilidadesWrapper .boxHabilidades .areaPhp,
+.habilidades .habilidadesWrapper .boxHabilidades .areaLaravel,
+.habilidades .habilidadesWrapper .boxHabilidades .areaMysql,
+.habilidades .habilidadesWrapper .boxHabilidades .areaFigma,
+.habilidades .habilidadesWrapper .boxHabilidades .areaWordpress{
+    width: 130px;
+    height: 130px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/BoxHtml.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .first-area .areaHtml img,
+.habilidades .habilidadesWrapper .boxHabilidades .first-area .areaCss img,
+.habilidades .habilidadesWrapper .boxHabilidades .first-area .areaJavascript img,
+.habilidades .habilidadesWrapper .boxHabilidades .first-area .areaPhp img,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area .areaLaravel img,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area .areaMysql img,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area .areaFigma img,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area .areaWordpress img{
+    width: 40px;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .first-area,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area{
+    display: flex;
+    justify-content: center;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .lineOne{
+    position: relative;
+    top: 125px;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .lineTwo{
+    position: relative;
+    top: 290px;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .lineOne,
+.habilidades .habilidadesWrapper .boxHabilidades .lineTwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .lineOne .lineBox,
+.habilidades .habilidadesWrapper .boxHabilidades .lineTwo  .lineBox{ 
+    max-width: 600px;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .lineOne .lineBox img,
+.habilidades .habilidadesWrapper .boxHabilidades .lineTwo .lineBox img {
+    width: 100%;
+}
+.habilidades .habilidadesWrapper .boxHabilidades .first-area .areaHtml img,
+.habilidades .habilidadesWrapper .boxHabilidades .second-area .areaHtml img{
+    width: 40px;
+}
+/*END HABILIDADES*/
+
+/*CONHECIMENTOS*/
+.conhecimentos{
+    width: 100%;
+}
+.conhecimentos .conhecimentos-wrapper .firstBox .firstBoxText,
+.conhecimentos .conhecimentos-wrapper .secondBox .secondBoxText,
+.conhecimentos .conhecimentos-wrapper .thirdBox .thirdBoxText,
+.conhecimentos .conhecimentos-wrapper .fourtyBox .fourtyBoxText{
+    max-width: 370px;
+    text-align: justify;
+}
+.conhecimentos .conhecimentos-wrapper .firstBox .firstBoxText h2,
+.conhecimentos .conhecimentos-wrapper .secondBox .secondBoxText h2,
+.conhecimentos .conhecimentos-wrapper .thirdBox .thirdBoxText h2,
+.conhecimentos .conhecimentos-wrapper .fourtyBox .fourtyBoxText h2{
+    font-size: 20px;
+    text-align: center;
+    color: var(--amarelo);
+}
+/*END CONHECIMENTOS*/

@@ -11,7 +11,7 @@
                         vamos conversar sobre como posso ajudar a impulsionar seu 
                         negócio com soluções web de alta qualidade.</p>
                         <div class="button-wrapper">
-                            <a class="button-bate-papo" href="">
+                            <a class="button-bate-papo" href="https://wa.link/el1sac">
                                 <button class="button">
                                     Bate papo
                                 </button>

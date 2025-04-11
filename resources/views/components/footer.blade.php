@@ -17,7 +17,7 @@
               <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
               <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-github"></i>GitHub</a></li>
               <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://wa.link/el1sac"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></li>
             </ul>
           </div> 
           <div class="col l6">

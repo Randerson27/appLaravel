@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use Illuminate\Http\Request;
-use App\Models\Projeto;
 
-class ProjetoController extends Controller
+class CategoriaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // return "index";
-       $projetos = Projeto::all();
-
-        return view('site/home', compact('projetos'));
-        
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class ProjetoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Categoria $categoria)
     {
         //
     }
@@ -46,7 +42,7 @@ class ProjetoController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Categoria $categoria)
     {
         //
     }
@@ -54,7 +50,7 @@ class ProjetoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Categoria $categoria)
     {
         //
     }
@@ -62,7 +58,7 @@ class ProjetoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Categoria $categoria)
     {
         //
     }

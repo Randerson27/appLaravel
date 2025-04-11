@@ -15,8 +15,8 @@ class ProjetosSeeder extends Seeder
     public function run()
     {
         Projeto::create([
-            'NomeProjeto' => 'Marmitinha',
-            'Imagem' => 'dfgfg',
+            'NomeProjeto' => 'VetDomus',
+            'Imagem' => 'img/VetDomusNotebook.png',
             'Descricao' => 'Projeto feito em Laravel',
         ]);
     }

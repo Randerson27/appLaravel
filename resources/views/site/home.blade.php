@@ -13,7 +13,7 @@
                     
                 </div>
                 <div class="button-wrapper">
-                    <a class="button-bate-papo" href="">
+                    <a class="button-bate-papo" href="https://wa.link/el1sac">
                         <button class="button">
                             Bate papo
                         </button>
@@ -54,13 +54,19 @@
             <div class="boxProjetos col s12 center">
                 {{-- <img src="{{URL::asset('/img/bannerHome.png')}}" alt=""> --}}
 
-                <h2>Projetos realizados</h2>
+                <h5>Projetos realizados</h5>
 
                 <div class="boxCenter col s12">
-                    <div class="boxShowProjeto">
-                        <img src="{{URL::asset('/img/MarmitinhaNotebook.png')}}" alt="">
-                    </div>
-                    <div class="boxShowProjeto">
+
+                    @foreach ($projetos as $projeto)
+    
+                        <div class="boxShowProjeto">
+                            <img src="{{ $projeto->Imagem }}" alt="">
+                        </div>
+
+                    @endforeach
+
+                    {{-- <div class="boxShowProjeto">
                         <img src="{{URL::asset('/img/VetDomusNotebook.png')}}" alt="">
                     </div>
                     <div class="boxShowProjeto">
@@ -80,7 +86,7 @@
                     </div>
                     <div class="boxShowProjeto">
                         <img src="{{URL::asset('/img/sumup-nK9w3J8cSxU-unsplash.jpg')}}" alt="">
-                    </div>
+                    </div> --}}
                     
                 </div>
 
@@ -89,42 +95,9 @@
     </div>
 </section>
 
-{{-- <div class="row">
-    <h3 class="col s12 center">Serviços</h3>
-    <div class="boxServicos col s12 l12 center">
-        <div class="boxDeveloper col s4 left">
-            <h5>Developer</h5>
-            <p>
-                Com habilidades incríveis na criação de landing pages, 
-                transformo ideias em designs criativos e funcionais que 
-                capturam a atenção e convertem visitantes em clientes.
-            </p>
-            <a href="">Saiba mais...</a>
-        </div>
-        <div class="boxDesigner col s4">
-            <h5>Designer</h5>
-            <p>Como designer, uso a criatividade para transformar conceitos 
-                em peças visuais únicas e impactantes. Minha abordagem 
-                inovadora garante soluções que encantam e comunicam de 
-                forma eficaz.
-            </p>
-            <a href="">Saiba mais...</a>
-        </div>
-        <div class="boxMarketing col s4 right">
-            <h5>Marketing Digital</h5>
-            <p>Especialista em Marketing Digital com expertise em Google Ads, 
-                Google Analytics e estratégias de tráfego pago. Transformo dados 
-                em resultados, otimizando campanhas para maximizar ROI e impulsionar 
-                negócios.
-            </p>
-            <a href="">Saiba mais...</a>
-        </div>
-    </div>
-</div> --}}
-
 <div class="servicos">
     <div class="container servicos-wrapper">
-        <h2 class="col s12 center">Serviços</h2>
+        <h5 class="col s12 center">Serviços</h5>
        <div class="boxServicos">
 
             <div class="boxDev">
@@ -156,6 +129,7 @@
                     
                 </div>
                 <a href="sobre">Saiba mais...</a>
+                {{-- <a href="{{route('site.sobre')}}">Saiba mais...</a> --}}
             </div>
 
             <div class="boxMarketing">
@@ -181,7 +155,7 @@
 <div class="informacoes">
     <div class="container informacoes-wrapper">
         <hr>
-        <h2>Informações</h2>
+        <h5>Informações</h5>
         <div class="boxInformacoes">
             
             <div class="boxProjetos">
