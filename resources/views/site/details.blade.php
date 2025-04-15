@@ -9,7 +9,9 @@
         </div>
 
         <div class="col s12 m6 center">
-            <h2>{{$produto->NomeProduto}}</h2>
+
+            <h2>R${{ number_format($produto->Preco, 2, ',', '.' ) }}</h2>
+            <h6>{{$produto->NomeProduto}}</h6>
             <p>{{$produto->Descricao}}</p>
             <button class="btn orange btn-large">Comprar</button>
         </div>

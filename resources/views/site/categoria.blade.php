@@ -4,8 +4,8 @@
 
 <section class="produtos">
     <div class="container">
-        <div class="row">
-          {{-- <!-- Dropdown Structure -->
+        {{-- <div class="row">
+          <!-- Dropdown Structure -->
             <ul id="dropdown1" class="dropdown-content">
               @foreach ($categoriasMenu as $categoriasM)
                 <li><a href="#!">{{ $categoriasM->name }}</a></li>
@@ -24,23 +24,24 @@
             </div>
           </nav> --}}
           @component('components.navProduto')@endcomponent
-
+          <h5>Categorias: {{ $categoria->name }}</h5>
           <div class="produtos-wrapper col s12">
+            
                 
             @foreach ($produtos as $produto)
 
                 <div class="boxProduto card">
                     <div class="card-image">
-                    <img src="{{ $produto->Imagem }}">
-                    <span class="card-title">{{ $produto->NomeProduto }}</span>
-                    <a href="{{ route('site.details', $produto->slug) }}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa-solid fa-plus"></i></a>
+                        <img src="{{ $produto->Imagem }}">
+                        <span class="card-title">{{ $produto->NomeProduto }}</span>
+                        <a href="{{ route('site.details', $produto->slug) }}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa-solid fa-plus"></i></a>
                     </div>
                     <div class="card-content">
-                    <p>Descrição: {{ Str::limit($produto->Descricao, 20) }}</p>
-                    <br><br>
-                    <p>Valor: {{$produto->Preco}}</p><br>
-                    <p>Postado por: {{$produto->user->firstName}}</p><br>
-                    <p>Categoria: {{$produto->categoria->name}}</p>
+                        <p>Descrição: {{ Str::limit($produto->Descricao, 20) }}</p>
+                        <br><br>
+                        <p>Valor: {{$produto->Preco}}</p><br>
+                        <p>Postado por: {{$produto->user->firstName}}</p><br>
+                        <p>Categoria: {{$produto->categoria->name}}</p>
                     </div>
                 </div>
                 

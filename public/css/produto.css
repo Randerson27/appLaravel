@@ -33,3 +33,16 @@
 .paginacao{
     margin: 20px 0;
 }
+
+/*NAV PRODUTO*/
+.produtos .nav-produto{
+    background-color: var(--lightBlack);
+}
+.produtos .nav-produto .title-produto{
+    padding: 0 20px;
+}
+.produtos .nav-produto ul li i{
+    font-size: 10px;
+    padding: 0 10px;
+}
+/**/

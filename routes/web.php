@@ -23,9 +23,12 @@ Route::get('/projeto', function(){
 Route::get('/sobre', function(){
     return view('site/sobre');
 });
+
+/*Rota de acesso a Produto*/
 Route::get('/produto/{slug}', function(){
     return view('site/details');
 });
+
 
 
 /*Rotas de acesso a home*/
@@ -44,4 +47,6 @@ Route::resource('contato', ClienteController::class);
 /* Rotas de acesso a produto */
 Route::resource('produto', ProdutoController::class);
 Route::get('/produto/{slug}', [SiteController::class, 'details'])->name('site.details');
+Route::get('/categoria/{id}', [SiteController::class, 'categoria'])->name('site.categoria');
+
 
